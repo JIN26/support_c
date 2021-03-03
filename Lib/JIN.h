@@ -56,18 +56,18 @@ void ordenar(int x[]);//ordena los numero de mayor a menos o alreves para enviar
 int control(int restar()){
 	printf("\n\n\t\t");
 	if(GetAsyncKeyState(VK_SHIFT)){
-        restar();
-    }
-    if(GetAsyncKeyState(VK_SPACE)){
+    restar();
+  }
+  if(GetAsyncKeyState(VK_SPACE)){
 		getchar();
-    }
+  }
 	if(GetAsyncKeyState(VK_ESCAPE)){
 		return 1;
-    }
-    if(GetAsyncKeyState(VK_TAB)){
-	    exit(0);
-    }
-    system("cls");
+  }
+  if(GetAsyncKeyState(VK_TAB)){
+    exit(0);
+  }
+  system("cls");
 }
 
 void gotoxy(int y,int x){
@@ -394,7 +394,7 @@ void movimiento1(int matriz[][COL],int *X,int *Y){
 	}*/
 }
 
-void movimiento2(int matriz[][COL],int *X,int *Y){//ubicacion del muñeco 2
+void movimiento2(int matriz[][COL],int *X,int *Y){//ubicacion del muï¿½eco 2
 	char tecla=0;
 	getchar();
 //----------arriba jugador 2--------------------------------------------------------------------------------------------
