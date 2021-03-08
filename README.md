@@ -5,4 +5,4 @@
 * Mi libreria personal 
 * Todo documentado
 
-wiki https://github.com/JIN26/support_c.wiki.git
+wiki https://github.com/JIN26/support_c/wiki.git
