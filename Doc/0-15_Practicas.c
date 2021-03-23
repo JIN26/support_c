@@ -19,7 +19,8 @@
 /*
  * 
  */
-
+int primo(int a);
+int fact(int num);
 int practica();
 int main (int argc, char** argv) {
   char n;
@@ -424,18 +425,12 @@ int main (int argc, char** argv) {
           fflush(stdin);
         } while (n!='.');
         break;
-      case 14://comprueba si un numero es primo
+      case 14://comprueba si un numero es primo con function
         do {
           system("cls");
           printf("numero: ");
           scanf("%d",&x);
-          y=z=0;
-          for(i=2; i<x&&z!=1; i++) {
-            y=x%i;
-            if(y==0) {
-              z++;
-            }
-          }
+          z=primo(x);
           if(z==0) {
             printf("es primo");
           } else {
@@ -444,6 +439,28 @@ int main (int argc, char** argv) {
           n=tolower(getch());
           fflush(stdin);
         } while (n!='.');
+        break;
+      case 15: //factorial with bucle and function
+        do {
+            printf("numero: ");
+            scanf("%d",&x);
+            printf("numero2: ");
+            scanf("%d",&y);
+            z=fact(x);
+            printf("\nresultado:%d",z);
+            z=fact(y);
+            printf("\nresultado2:%d",z);
+            n=tolower(getch());
+            fflush(stdin);
+        } while(n!='.');
+        system("pause");
+        return (EXIT_SUCCESS);
+        break;
+      case 16://numero 6174
+
+        break;
+      case 17:
+
         break;
     }
     n=tolower(getch());
@@ -463,4 +480,20 @@ int practica() {
     }
   }
   return (EXIT_SUCCESS);
+}
+
+int fact(int num) {//num=x; luego num=y;
+	for(int i=1,j=1; i<=num; i++) {
+		j*=i;
+	}
+	return j;
+}
+
+int primo(int a) { //a=x; luego a=y;
+    for(int i=2;k=0; i<a && k!=1; i++) {
+      if(a%i==0) {
+        k++;
+      }
+    }
+    return k;
 }
